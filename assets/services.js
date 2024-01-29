@@ -1,7 +1,7 @@
 // Esta función realiza la carga del contenido desde el JSON
 function loadContent(serviceKey) {
     // Hacer la solicitud fetch para obtener el JSON
-    fetch('assets/services.json')
+    fetch('../services.json')
         .then(response => response.json())
         .then(jsonData => {
             var content = jsonData[serviceKey];

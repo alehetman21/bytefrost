@@ -37,7 +37,7 @@ function rotateCarousel(direction) {
     }, { once: true });
 }
 
-fetch('assets/benefits.json')
+fetch('../benefits.json')
     .then(response => response.json())
     .then(data => {
         benefitsData = data;

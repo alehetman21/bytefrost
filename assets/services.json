@@ -1,36 +1,36 @@
 {
     "website-development": {
-      "imageSrc": "assets/Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
+      "imageSrc": "../Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
       "title": "WEBSITE DEVELOPMENT",
       "description": "Elevate your business with world-class web development. We create captivating pages, bringing your dreams closer. Explore more now!",
       "buttonText": "MORE INFO"
     },
     "corporate-website": {
-      "imageSrc": "assets/Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
+      "imageSrc": "../Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
       "title": "CORPORATE WEBSITE",
       "description": "Project professionalism online. Our corporate websites showcase your brand's excellence. Impress clients and stakeholders with a polished digital presence.",
       "buttonText": "MORE INFO"
     },
     "startup-website": {
-      "imageSrc": "assets/Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
+      "imageSrc": "../Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
       "title": "STARTUP WEBSITE",
       "description": "Launch strong online. Our startup websites are dynamic and engaging, setting a powerful foundation for emerging businesses. Stand out in the digital landscape.",
       "buttonText": "MORE INFO"
     },
     "lodging-website": {
-      "imageSrc": "assets/Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
+      "imageSrc": "../Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
       "title": "LODGING WEBSITE",
       "description": "Elevate your lodging business online. Our websites attract bookings and provide a seamless experience for guests. Showcase amenities and boost reservations effortlessly.",
       "buttonText": "MORE INFO"
     },
     "e-commerce": {
-      "imageSrc": "assets/Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
+      "imageSrc": "../Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
       "title": "E-COMMERCE",
       "description": "Open doors to online success. Our e-commerce solutions drive sales and customer satisfaction. Secure transactions and user-friendly interfaces make your business thrive.",
       "buttonText": "MORE INFO"
     },
     "wordpress-development": {
-      "imageSrc": "assets/Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
+      "imageSrc": "../Images/pixlr-image-generator-65ad40539b124440709f92b2.png",
       "title": "WORDPRESS DEVELOPMENT",
       "description": "Use WordPress for a customizable online presence. Control your content with our specialized development services. Engage your audience effectively and stand out effortlessly.",
       "buttonText": "MORE INFO"

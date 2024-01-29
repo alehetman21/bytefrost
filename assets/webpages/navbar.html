@@ -1,0 +1,76 @@
+<div class="navbar-container small-devices">
+    <nav class="navbar fixed-top">
+        <div class="container-fluid mx-3">
+            <a href="index.html" class="navbar-brand logo-hyper">
+                <img src="../logo sin f.png" alt="ByteFrost" id="logo">
+            </a>    
+          <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img class="navbar-toggler-icon" id="options-btn" src="../menu-icon-png-3-lines-11552739317jfnbfzzmez-removebg-preview.png">
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="custom-offcanvas-header">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../small-en.png" alt="" class="small-devices-language-flag" id="small-devices-current-language-flag">
+                        Language
+                    </a>
+                  <ul class="dropdown-menu" id="languageDropdownMobile">
+                  </ul>
+                </li>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item redirect">
+                    <a class="home-offcanvas" aria-current="page" href="../../index.html" data-translate-key="home">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item redirect">
+                    <a aria-current="page" href="../webpages/services.html" data-translate-key="services">
+                        Services
+                    </a>
+                </li>
+                <li class="nav-item redirect">
+                    <a aria-current="page" href="#" data-translate-key="benefits">
+                        Benefits
+                    </a>
+                </li>
+                <li class="nav-item redirect">
+                    <a aria-current="page" href="#" data-translate-key="about_us">
+                        About us
+                    </a>
+                </li>
+                <li class="nav-item redirect">
+                    <a aria-current="page" href="#" data-translate-key="contact_us">
+                        Contact us
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</div>
+
+<div class="navbar-container large-devices" id="large-navbar">
+    <a href="index.html" class="navbar-brand logo-hyper">
+        <img src="../logo sin f.png" alt="ByteFrost" id="logo">
+    </a>
+    <div class="navbar-items-container">
+        <a href="" class="navbar-item" data-translate-key="home">Home</a> 
+        <a href="../webpages/services.html" class="navbar-item" data-translate-key="services">Services</a> 
+        <a href="" class="navbar-item" data-translate-key="benefits">Benefits</a> 
+        <a href="" class="navbar-item" data-translate-key="about_us">About us</a> 
+        <a href="#contact-us-section" class="navbar-item" data-translate-key="contact_us">Contact us</a> 
+    </div>
+    <div class="dropdown">
+        <!-- Botón del dropdown con la imagen de la bandera -->
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../en.png" alt="Language" class="language-flag" id="current-language-flag">
+        </button>
+        <!-- Contenido del dropdown -->
+        <ul class="dropdown-menu" aria-labelledby="languageDropdown" id="language-dropdown-menu">
+        </ul>
+    </div>
+</div>

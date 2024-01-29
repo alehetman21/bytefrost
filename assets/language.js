@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let translations;
 
-    fetch('assets/translations.json')
+    fetch('../translations.json')
         .then(response => response.json())
         .then(data => {
             translations = data;
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const languageLink = document.createElement('a');
     
                 languageChange.className = 'language-change'; // Mantener la clase existente
-                languageImage.src = `assets/${lang}.png`;
+                languageImage.src = `../${lang}.png`;
                 languageImage.alt = lang;
                 languageLink.href = '#';
                 languageLink.setAttribute('data-lang', lang);
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     updateLanguageDropdown(selectedLang);
     
                     // Cambiar la imagen del botón según el idioma seleccionado
-                    languageFlag.src = `assets/${selectedLang}.png`;
+                    languageFlag.src = `../${selectedLang}.png`;
                 });
             }
         });

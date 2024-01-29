@@ -6,19 +6,6 @@ body {
 
 /* Nav Bar */
 
-.navbar-container img {
-    width: 100px;
-}
-
-.navbar {
-    border-bottom: 1px solid #fff;
-    background: radial-gradient(circle , #001d6b, #03071b) fixed;
-}
-
-.navbar-toggler-icon  {
-    filter: brightness(0) invert(1); /* Invierte el color del icono a blanco */
-}
-
 @media only screen and (max-width: 600px) {
     
 /* First Page */

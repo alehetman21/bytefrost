@@ -1,11 +1,11 @@
 {
     "global-presence": {
-        "imageSrc": "assets/kisspng-globe-world-icon-world-png-file-5a77e7a0248332.0330429615178075201496-removebg-preview.png",
+        "imageSrc": "../kisspng-globe-world-icon-world-png-file-5a77e7a0248332.0330429615178075201496-removebg-preview.png",
         "title": "GLOBAL PRESENCE",
         "description": "Elevate your business with world-class web development. We create captivating pages, bringing your dreams closer. Explore more now!"
       },
       "corporate-website": {
-        "imageSrc": "assets/small-en.png",
+        "imageSrc": "../small-en.png",
         "title": "PEPELU JUMPSCARES YOU",
         "description": "WARNING PEPELU IS HERE!!!WARNING PEPELU IS HERE!!!WARNING PEPELU IS HERE!!!WARNING PEPELU IS HERE!!!WARNING PEPELU IS HERE!!!WARNING PEPELU IS HERE!!!"
       }
