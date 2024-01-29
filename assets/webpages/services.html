@@ -16,8 +16,7 @@
 </head>
 <body>
     <!-- Nav Bar-->
-    <div id="all-navbars-container">
-
+    <div id="navbars-container">
     </div>
 
     <!-- First Page -->
@@ -567,13 +566,7 @@
           },
       });
     </script>
-    <script>
-        fetch('./navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('all-navbars-container').innerHTML = data;
-        });
-    </script>
+    <script src="../scripts/navbar-load.js"></script>
     <script src="../language.js"></script>
     <script src="../small-devices-language.js"></script>
 </body>
