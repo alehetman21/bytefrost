@@ -1,0 +1,32 @@
+{
+    "en": {
+        "home": "Home",
+        "services": "Services",
+        "benefits": "Benefits",
+        "about_us": "About us",
+        "contact_us": "Contact us",
+        "intro_paragraph" : "For years, we have been supporting all kinds of companies in creating world-class webpages, moving them closer to their dreams.",
+        "contact_us_caps": "CONTACT US",
+        "services_caps": "SERVICES"
+    },
+
+    "es": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "benefits": "Beneficios",
+        "about_us": "Acerca de nosotros",
+        "contact_us": "Contáctenos",
+        "intro_paragraph": "Durante años, hemos estado apoyando a todo tipo de empresas en la creación de páginas web de clase mundial, acercándolas más a sus sueños.",
+        "contact_us_caps": "CONTACTÁCTENOS",
+        "services_caps": "SERVICIOS"
+    },
+
+    "fr": {
+        "home":"Accueil",
+        "services": "Services",
+        "benefits": "Avantages",
+        "about_us": "À propos de nous",
+        "contact_us": "Contactez-nous",
+        "intro_paragraph": "Depuis des années, nous soutenons toutes sortes d'entreprises dans la création de sites web de classe mondiale, les rapprochant ainsi de leurs rêves."
+    }
+}

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+    <link rel="stylesheet"  href="../css/styleServices.css" />
+    <title>Services</title>
+</head>
+<body>
+    <!-- Nav Bar-->
+    <div class="navbar-container">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid mx-3">
+                <a href="index.html" class="navbar-brand logo-hyper">
+                    <img src="./Codigo/Images/logo sin f.png" alt="ByteFrost" id="logo">
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- First Page -->
+    <div class="firstPage-Services">
+        <div class="text">SERVICES</div>
+        <img src="../Images/ServicePage/CodeLogo.png" class="icon" id="icon1">
+        <img src="../Images/ServicePage/LodgingLogo.png" class="icon" id="icon2">
+        <img src="../Images/ServicePage/MarketLogo.png" class="icon" id="icon3">
+        <img src="../Images/ServicePage/PeopleLogo" class="icon" id="icon4">
+        <img src="../Images/ServicePage/RocketLogo.png" class="icon" id="icon5">
+        <img src="../Images/ServicePage/WordPressLogo.png" class="icon" id="icon6">
+    </div>
+
+    <div class="firstPageTablets-Services">
+        <div class="text">SERVICES</div>
+        <div class="service-container">
+            <div class="service-item" id="new-container1">
+                <div class="service-content">
+                    <img src="../Images/ServicePage/CodeLogo.png" class="new-icon">
+                    <div class="title">WEB DEVELOPMENT</div>
+                </div>
+            </div>
+            <div class="service-item" id="new-container2">
+                <div class="service-content">
+                    <img src="../Images/ServicePage/LodgingLogo.png" class="new-icon">
+                    <div class="title">LODGING WEBSITE</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-content" id="new-container3">
+                    <img src="../Images/ServicePage/MarketLogo.png" class="new-icon">
+                    <div class="title">E-COMMERCE</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-content" id="new-container4">
+                    <img src="../Images/ServicePage/PeopleLogo.png" class="new-icon">
+                    <div class="title">CORPORATE WEBSITE</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-content" id="new-container5">
+                    <img src="../Images/ServicePage/RocketLogo.png" class="new-icon">
+                    <div class="title">STARTUP WEBSITE</div>
+                </div>
+            </div>
+            <div class="service-item" id="new-container6">
+                <div class="service-content">
+                    <img src="../Images/ServicePage/WordPressLogo.png" class="new-icon">
+                    <div class="title">WORDPRESS WEBSITE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="firstPageComputers-Services">
+        <div class="firstThreeServices">
+            <div class="service1">
+                <img src="../Images/ServicePage/CodeLogo.png" class="imageService1">
+                <h3>WEB DEVELOPMENT</h3>
+            </div>
+            <div class="service2">
+                <img src="../Images/ServicePage/LodgingLogo.png" class="imageService2">
+                <h3>LODGING WEBSITE</h3>
+            </div>
+            <div class="service3">
+                <img src="../Images/ServicePage/MarketLogo.png" class="imageService3">
+                <h3>E-COMMERCE</h3>
+            </div>
+        </div>
+        <h1>SERVICES</h1>
+        <div class="secondThreeServices">
+            <div class="service4">
+                <img src="../Images/ServicePage/PeopleLogo.png" class="imageService4">
+                <h3>CORPORATE WEBSITE</h3>
+            </div>
+            <div class="service5">
+                <img src="../Images/ServicePage/RocketLogo.png" class="imageService5">
+                <h3>STARTUP WEBSITE</h3>
+            </div>
+            <div class="service6">
+                <img src="../Images/ServicePage/WordPressLogo.png" class="imageService6">
+                <h3>WORDPRESS WEBSITE</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Second Page -->
+    <div class="secondPage-services">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2>WEBSITE DEVELOPMENT</h2>
+
+                    <img src="..Images/WebPageDemo2.png" />
+                    
+                    <p>
+                        Our passion lies in crafting bespoke websites that not only showcase the 
+                        essence of your lodging business but also captivate your audience from the 
+                        moment they land on your site taking care of the most important thing about a 
+                        lodging, the personal brand
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <h2>STARTUP WEBSITE</h2>
+
+                    <img src="../Images/WebPageDemo1.png" />
+                    
+                    <p>
+                        Our passion lies in crafting bespoke websites that not only showcase the 
+                        essence of your lodging business but also captivate your audience from the 
+                        moment they land on your site taking care of the most important thing about a 
+                        lodging, the personal brand
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <h2>E-COMMERCE</h2>
+
+                    <img src="../Images/WebPageDemo.png" />
+                    
+                    <p>
+                        Our passion lies in crafting bespoke websites that not only showcase the 
+                        essence of your lodging business but also captivate your audience from the 
+                        moment they land on your site taking care of the most important thing about a 
+                        lodging, the personal brand
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <h2>CORPORATE WEBSITE</h2>
+
+                    <img src="../Images/WebPageDemo.png" />
+                    
+                    <p>
+                        Our passion lies in crafting bespoke websites that not only showcase the 
+                        essence of your lodging business but also captivate your audience from the 
+                        moment they land on your site taking care of the most important thing about a 
+                        lodging, the personal brand
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <h2>LODGING WEBSITE</h2>
+
+                    <img src="../Images/WebPageDemo2.png" />
+                    
+                    <p>
+                        Our passion lies in crafting bespoke websites that not only showcase the 
+                        essence of your lodging business but also captivate your audience from the 
+                        moment they land on your site taking care of the most important thing about a 
+                        lodging, the personal brand
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <h2>WORDPRESS DEVELOPMENT</h2>
+
+                    <img src="../Images/WebPageDemo1.png" />
+                    
+                    <p>
+                        Our passion lies in crafting bespoke websites that not only showcase the 
+                        essence of your lodging business but also captivate your audience from the 
+                        moment they land on your site taking care of the most important thing about a 
+                        lodging, the personal brand
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <div class="secondPageComputer-services">
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="..Images/WebPageDemo2.png" class="slide-image" />
+                        <div class="slide-text">
+                            <h2>WEBSITE DEVELOPMENT</h2>
+                            <p>
+                                Our passion lies in crafting bespoke websites that not only showcase the 
+                                essence of your lodging business but also captivate your audience from the 
+                                moment they land on your site taking care of the most important thing about a 
+                                lodging, the personal brand
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="..Images/WebPageDemo1.png" class="slide-image" />
+                        <div class="slide-text">
+                            <h2>STARTUP WEBSITE</h2>
+                            <p>
+                                Our passion lies in crafting bespoke websites that not only showcase the 
+                                essence of your lodging business but also captivate your audience from the 
+                                moment they land on your site taking care of the most important thing about a 
+                                lodging, the personal brand
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="../Images/WebPageDemo.png" class="slide-image" />
+                        <div class="slide-text">
+                            <h2>E-COMMERCE</h2>
+                            <p>
+                                Our passion lies in crafting bespoke websites that not only showcase the 
+                                essence of your lodging business but also captivate your audience from the 
+                                moment they land on your site taking care of the most important thing about a 
+                                lodging, the personal brand
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <img src="../Images/WebPageDemo.png" class="slide-image" />
+                        <div class="slide-text">
+                            <h2>CORPORATE WEBSITE</h2>
+                            <p>
+                                Our passion lies in crafting bespoke websites that not only showcase the 
+                                essence of your lodging business but also captivate your audience from the 
+                                moment they land on your site taking care of the most important thing about a 
+                                lodging, the personal brand
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>    
+
+    <!-- Third Page -->
+    <div class="thirdPage-services">
+        <h2>WEB DEVELOPMENT PROCESS</h2>
+        <ul class="custom-list">
+            <li class="custom-list-item">
+                <div class="number">1</div>
+                <div class="content">
+                    <div class="name">INFORMATION COLLECTION</div>
+                    <div class="description">Know your company and objectives</div>
+                </div>
+            </li>
+            <li class="custom-list-item">
+                <div class="number">2</div>
+                <div class="content">
+                    <div class="name">PLANNING</div>
+                    <div class="description">Prepare an action plan that meets your needs</div>
+                </div>
+            </li>
+            <li class="custom-list-item">
+                <div class="number">3</div>
+                <div class="content">
+                    <div class="name">WEB DESIGN</div>
+                    <div class="description">Create the design and flow of the page</div>
+                </div>
+            </li>
+            <li class="custom-list-item">
+                <div class="number">4</div>
+                <div class="content">
+                    <div class="name">DEVELOPMENT</div>
+                    <div class="description">Front end and back end development</div>
+                </div>
+            </li>
+            <li class="custom-list-item">
+                <div class="number">5</div>
+                <div class="content">
+                    <div class="name">TESTING</div>
+                    <div class="description">Components of the page are tested and verified</div>
+                </div>
+            </li>
+            <li class="custom-list-item">
+                <div class="number">6</div>
+                <div class="content">
+                    <div class="name">LAUNCH AND SUPPORT</div>
+                    <div class="description">Page is up-to-date and ready to be launch</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="thirdPageComputer-Services">
+        <h2>WEB DEVELOPMENT PROCESS</h2>
+        <div class="thirdPageComputerContainer">
+            <div class="firstThreeSteps">
+                <div class="step">
+                    <div class="stepNumber">1</div>
+                    <div class="stepContent">
+                        <div class="stepTitle">INFORMATION COLLECTION</div>
+                        <div class="stepDescription">Know your company and objectives</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="stepNumber">2</div>
+                    <div class="stepContent">
+                        <div class="stepTitle">PLANNING</div>
+                        <div class="stepDescription">Prepare an action plan that meets your needs</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="stepNumber">3</div>
+                    <div class="stepContent">
+                        <div class="stepTitle">WEB DESIGN</div>
+                        <div class="stepDescription">Create the design and flow of the page</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondThreeSteps">
+                <div class="step">
+                    <div class="stepNumber">4</div>
+                    <div class="stepContent">
+                        <div class="stepTitle">DEVELOPMENT</div>
+                        <div class="stepDescription">Front end and back end development</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="stepNumber">5</div>
+                    <div class="stepContent">
+                        <div class="stepTitle">TESTING</div>
+                        <div class="stepDescription">Components of the page are tested and verified</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="stepNumber">6</div>
+                    <div class="stepContent">
+                        <div class="stepTitle">LAUNCH AND SUPPORT</div>
+                        <div class="stepDescription">Page is up-to-date and ready to be launch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Fourth Page -->
+    <div class="fourthPage-services">
+        <h2>Why ByteFrost Studios?</h2>
+        <img src="../Images/logo.png" src="LogoByteFrost" />
+        <p>
+            We attentively heed your needs, meticulously crafting 
+            websites or apps that excel in branding, design, and 
+            overall user experience. Each website and app is meticulously 
+            tailored and responsive, enabling our clients to connect with 
+            a broader audience. 
+        </p>
+        <p>
+            Our straightforward and transparent process keeps you informed 
+            about your project's progress at every stage. With a customer-centric 
+            focus, we devote our energy to developing entirely unique websites and 
+            apps, aiming to achieve specific goals, whether it's generating leads 
+            or enhancing sales.
+        </p>
+    </div>
+
+    <!-- Five Page -->
+    <div class="contact-us-section">
+        <h2>CONTACT US</h2>
+        <form action="index.html" method="post">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <button type="submit" id="send-btn">SEND</button>
+        </form>
+    </div>
+
+    <!-- Five Page -->
+    <div class="contact-us-computer-section">
+        <h2>CONTACT US</h2>
+        <form action="index.html" method="post" class="contact-form">
+            <div class="columns">
+                <div class="column">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                </div>
+                <div class="column">
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+            </div>
+            <button type="submit" id="send-btn">SEND</button>
+        </form>
+    </div>
+
+    <!-- Last Part -->
+    <div class="bottom-page-section">
+        <div class="socials-icons-container">
+            <div class="first-socials-icons">
+                <img src="./Codigo/Images/Socials/InstagramLogo.png" alt="Instagram Logo">
+                <img src="./Codigo/Images/Socials/PinterestLogo.png" alt="Pinterest Logo">
+            </div>
+            <div class="upper-button" onclick="scrollToTop()">
+                <img src="./Codigo/Images/UpperIcon.png" />
+            </div>
+            <div class="second-socials-icons">
+                <img src="./Codigo/Images/Socials/LinkedInLogo.png" alt="LinkedIn Logo">
+                <img src="./Codigo/Images/Socials/TwitterLogo.png" alt="Twitter Logo">
+            </div>
+        </div>
+        <p class="terms">Terms & Conditions</p>
+        <p class="bar">/</p>
+        <p class="privacy-policy">Privacy Policy</p>
+        <p class="Copyright">Copyright © 2024 ByteFrost Studios</p>
+    </div>
+
+    <div class="bottom-bar">
+        <!-- Columna 1 -->
+        <div class="column">
+            <div class="pageColumn1">
+                <span class="homePage">Home</span>
+                <span class="aboutPage">About</span>
+            </div>
+            <div class="pageColumn2">
+                <span class="benefitsPage">Benefits</span>
+                <span class="servicesPage">Services</span>
+            </div>
+            <div class="contactUsPage">Contact Us</div>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="column image-column">
+            <img src="./Codigo/Images/logo sin f.png" alt="Copyright">
+            <div>Copyright © 2023 ByteFrost Studios</div>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="column image-logo">
+            <div>
+                <img src="./Codigo/Images/Socials/InstagramLogo.png" alt="Instagram Logo">
+                <img src="./Codigo/Images/Socials/PinterestLogo.png" alt="Pinterest Logo">
+                <img src="./Codigo/Images/Socials/LinkedInLogo.png" alt="LinkedIn Logo">
+                <img src="./Codigo/Images/Socials/TwitterLogo.png" alt="Twitter Logo">
+            </div>
+            <div class="terms">
+                <span>Terms & Conditions</span>
+                <span>Privacy Policy</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        const icons = document.querySelectorAll('.icon');
+    
+        let angle = 0;
+    
+        function rotateIcons() {
+          angle += 0.005;; // ajusta la velocidad de rotación según tus preferencias
+          const radius = 110; // ajusta el radio según tus necesidades
+    
+          icons.forEach((icon, index) => {
+            const x = radius * Math.cos(angle + index * (Math.PI / 3));
+            const y = radius * Math.sin(angle + index * (Math.PI / 3));
+            icon.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+          });
+    
+          requestAnimationFrame(rotateIcons);
+        }
+    
+        rotateIcons()
+    
+    </script>
+    <script>
+        const serviceItems = document.querySelectorAll('.service-item');
+    
+        let secondAngle = 0;
+    
+        function moveCircular() {
+            secondAngle += 0.005;; // ajusta la velocidad de rotación según tus preferencias
+            const radius = 160; // ajusta el radio según tus necesidades
+    
+            serviceItems.forEach((item, index) => {
+                const x = radius * Math.cos(secondAngle + index * (Math.PI / 3));
+                const y = radius * Math.sin(secondAngle + index * (Math.PI / 3));
+                item.style.transform = `translate(-50%, -50%) translate(${x}px, ${y}px)`;
+            });
+    
+            requestAnimationFrame(moveCircular);
+        }
+    
+        moveCircular();
+    </script>
+      <script>
+        function scrollToTop() {
+          // Obtén el elemento del cuerpo y el documento
+          var body = document.body;
+          var html = document.documentElement;
+      
+          // Obtén la altura máxima de la página
+          var maxHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+      
+          // Haz que la página se desplace suavemente hacia arriba
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+    </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            initialSlide: 0,
+            coverflowEffect: {
+                depth: 500,
+                modifier: 1,
+                slidesShadows: false,
+                rotate: 0,
+                stretch: 0
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+          effect: "cube",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          loop: true,
+          initialSlide: 0,
+          coverflowEffect: {
+              depth: 500,
+              modifier: 1,
+              slidesShadows: false,
+              rotate: 0,
+              stretch: 0
+          },
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+      });
+  </script>
+</body>
+</html>

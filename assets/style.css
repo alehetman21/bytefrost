@@ -1,0 +1,1843 @@
+body {
+    background: radial-gradient(circle , #001d6b, #03071b) fixed;
+    margin: 0;
+}
+
+/* Agrega estos estilos a tu archivo CSS existente */
+
+.benefits-info {
+    perspective: 1000px;
+}
+
+.benefits-info img {
+    width: 100%;
+    max-width: 200px; /* Ajusta según sea necesario */
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
+}
+
+.benefits-info.left-rotation .benefits-image {
+    transform: rotateY(90deg);
+}
+
+.benefits-info.right-rotation .benefits-image {
+    transform: rotateY(-90deg);
+}
+ /*QUITARRRR
+ SADASD
+ DSAADA
+ DSASDDADSA
+ ASDADS
+ A */
+
+#languageDropdownMobile {
+    width: 50%;
+}
+
+#languageDropdownMobile > li {
+    width: 80%;
+}
+
+.navbar {
+    background: radial-gradient(circle , #001d6b, #03071b) fixed;
+}
+
+#navbar-toggler {
+    border: 1px solid white;
+}
+
+#options-btn {
+    background: transparent;
+}
+
+.offcanvas-header {
+    align-items: start !important;
+}
+
+.offcanvas-body {
+    background: radial-gradient(circle , #15171f, #03071b) fixed;
+    color: white;
+}
+
+.small-devices-language-flag {
+    width: 10%;
+}
+
+.home-flex {
+    display: flex;
+    align-items: center;
+}
+
+.home-flex > img {
+    width: 10%;
+}
+
+.home-flex > h6 {
+    text-decoration: none;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+#large-navbar {
+    background: radial-gradient(circle , #001d6b, #03071b) fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.language-change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-change > img {
+    width: 20%;
+    margin-left: 10px;
+}
+
+.main-content::before {
+    content: '';
+    background: url('d13cd2c583.gif') no-repeat center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1; 
+}
+
+.main-content {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 1rem;
+    position: relative;
+}
+
+span {
+    font-weight: bold;
+}
+
+.contact-us-btn {
+    background-color: #fff;
+    color: #000;
+    border: 0px;
+}
+
+.main-content > p {
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.intro-paragraph {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 40px;
+}
+
+.service-section {
+    color: white;
+}
+
+.background-paragraph {
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+}
+
+.background-paragraph-container {
+    position: relative;
+    text-align: center;
+}
+
+.service-options > button {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-options > button:hover {
+    background: #220236; /* Cambia a un color más claro */
+    color: #ffffff; /* Cambia el color del texto */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Agrega una sombra */
+}
+
+
+@media (max-width: 390px){
+    .background-paragraph {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 485px){
+    .background-paragraph {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 486px) and (max-width: 570px){
+    .background-paragraph {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 571px) and (max-width: 600px){
+    .background-paragraph {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 600px){
+    
+    .contact-us-btn {
+        padding: 3% 4.5%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+    
+    #logo {
+        width: 75%;
+    }
+    
+    .logo-hyper {
+        width: 30%;
+    }
+
+    .large-devices {
+        display: none;
+    }
+
+    .main-content::before {
+        background-size: 80%;
+    }
+    
+    .main-content > h1 {
+        margin-bottom: 60px;
+        font-weight: 700;
+    }
+
+    .main-content {
+        margin-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 75px;
+    }
+
+    
+    .service-section {
+        text-align: center;
+        margin-top: 25%;
+    }
+
+    .service-section > h1 {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: 225%;
+    }
+
+    .service-section > h3 {
+        font-size: 110%;
+    }
+
+    .service-switch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-switch > button {
+        background: transparent;
+        border: none;
+        width: 10vw;
+    }
+
+    .left-btn {
+        transform: rotate(180deg);
+        margin-right: 5%;
+    }
+
+    .option-arrow {
+        width: 100%;
+    }
+
+    .right-btn {
+        margin-left: 5%;
+    }
+
+    .service-info {
+        margin-top: 10%;
+        border: 3px solid white;
+        border-radius: 20px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .service-image {
+        width: 80%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .service-info > p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .service-info > button {
+        margin-top: 3%;
+        border: none;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-bottom: 5%;
+        padding: 2% 5%;
+    }
+    
+    .benefits-section {
+        text-align: center;
+        margin-top: 35%;
+        color: white;
+    }
+
+    .benefits-section > h1 {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: 225%;
+    }
+
+    .benefits-info {
+        margin-top: 20%;
+        background-color: #0000000f;
+    }
+
+    .benefits-info > img {
+        width: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .benefits-info > h4 {
+        font-weight: 500;
+    }
+
+    .benefits-info > p {
+        width: 60%;
+        display: inline-block;
+        margin-top: 5%;
+        font-weight: 200;
+        margin-bottom: 20%;
+    }
+
+    .benefits-info > button {
+        background: transparent;
+        border: none;
+        width: 10vw;
+        position: relative;
+        bottom: 8rem;
+    }
+
+    .benefits-section > button {
+        margin-top: 10%;
+    }
+
+    .about-us-section {
+        text-align: center;
+        margin-top: 35%;
+        color: white;
+    }
+
+    .about-us-section > img {
+        width: 30%;
+        margin-bottom: 15%;
+    }
+
+    .about-us-section > p {
+        width: 70%;
+        margin-left: 15%;
+        font-weight: 200;
+        margin-bottom: 10%;
+    }
+
+    .background-paragraph {
+        width: 80%;
+        margin-left: 10%;
+        top: -5%;
+    }
+    
+    .contact-us-computer-section {
+        display: none;
+      }
+    
+      .contact-us-section {
+        text-align: center;
+        color: white;
+        height: 100vh;
+        margin-top: 50%;
+        margin-bottom: 0%;
+      }
+    
+      .contact-us-section h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        text-transform: uppercase;
+      }
+    
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 8%;
+      }
+    
+      input,
+      textarea {
+        width: 80%;
+        box-sizing: border-box;
+        margin-bottom: 40px !important;
+        border: none;
+        border-bottom: 3px solid white; /* Add an underline border */
+        background-color: transparent; /* Optional: Make background transparent */
+        color: white; /* Set text color to white */
+        padding: 5px; /* Optional: Add padding for better spacing */
+        outline: none; /* Remove the outline on focus */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+    
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 17px; /* Ajusta el tamaño según tus preferencias */
+        color: rgba(255, 255, 255, 0.4);
+      }
+    
+      #message {
+        height: 150px; /* Adjust the height as needed */
+      }
+    
+      #send-btn {
+        display: block;
+        margin: 0 auto;
+        width: 23%;
+        background-color: white; /* Button background color */
+        color: black; /* Button text color */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 20px;
+        border: 0;
+        padding: 10px; /* Optional: Add padding for better button appearance */
+        font-weight: bold;
+        font-size: 70%;
+      }
+    
+    footer {
+        text-align: center;
+        color: white;
+    }
+    
+    .social-buttons {
+        display: flex;
+        gap: 10%;
+        justify-content: space-around;
+    }
+    
+    .footer-hyplink {
+        display: block;
+    }
+    
+    .social-1 > a > svg {
+        width: 5%;
+    }
+    
+    .social-2 > a > svg {
+        width: 5%;
+    }
+    
+}
+
+/* Contact Us Media */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .contact-us-computer-section{
+        display: none;
+    }
+
+    .contact-us-section {
+        text-align: center;
+        color: white;
+        margin-top: 240px;
+        margin-bottom: 180px;
+    }
+
+    .contact-us-section h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 8%;
+    }
+
+    input,
+    textarea {
+        width: 80%;
+        box-sizing: border-box;
+        margin-bottom: 40px !important;
+        border: none;
+        border-bottom: 3px solid white; /* Add an underline border */
+        background-color: transparent; /* Optional: Make background transparent */
+        color: white; /* Set text color to white */
+        padding: 5px; /* Optional: Add padding for better spacing */
+        outline: none; /* Remove the outline on focus */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 17px; /* Ajusta el tamaño según tus preferencias */
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    #message {
+        height: 150px; /* Adjust the height as needed */
+    }
+
+    #send-btn {
+        display: block;
+        margin: 0 auto;
+        width: 23%;
+        background-color: white; /* Button background color */
+        color: black; /* Button text color */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 20px;
+        border: 0;
+        padding: 10px; /* Optional: Add padding for better button appearance */
+        font-weight: bold;
+        font-size: 70%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .contact-us-section {
+        display: none;
+    }
+  
+    .contact-us-computer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        margin-top: 4%;
+    }
+  
+    .contact-us-computer-section h2 {
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: white;
+    }
+  
+    .contact-form {
+        display: flex;
+        flex-direction: column; /* Cambiado a columna */
+        align-items: center;
+    }
+  
+    .columns {
+        display: flex;
+        justify-content: space-between;
+        width: 200%;
+    }
+  
+    .column {
+        width: 45%; /* Ajusta el ancho según tus necesidades */
+        margin-bottom: 10px;
+    }
+  
+    .contact-us-computer-section input,
+    .contact-us-computer-section textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+        border: none;
+        border-bottom: 3px solid white;
+        background-color: transparent; 
+        color: white; 
+        padding: 5px; 
+        outline: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    .contact-us-computer-section input::placeholder,
+    .contact-us-computer-section textarea::placeholder {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+  
+    .contact-us-computer-section #message {
+        height: 210px;
+    }
+  
+    .contact-us-computer-section button {
+        width: 30%; /* Ajusta el ancho según tus necesidades */
+        background-color: white;
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 20px;
+        border: 0;
+        padding: 10px; 
+        font-weight: bold;
+        font-size: 70%;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* End Contact Us Media*/
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .large-devices {
+        display: none;
+    }
+
+    #logo {
+        width: 75%;
+    }
+
+    .logo-hyper {
+        width: 25%;
+    }
+
+    .main-content::before {
+        background-size: 80%;
+    }
+    
+    .main-content > h1 {
+        margin-bottom: 60px;
+        font-weight: 700;
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    .main-content {
+        margin-bottom: 50px;
+        margin-top: 13%;
+        padding-top: 150px;
+        padding-bottom: 135px;
+        font-size: 1.1rem;
+    }
+
+    .intro-paragraph {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .contact-us-btn {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .service-section {
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 200px;
+    }
+
+    .service-section > h1 {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: 225%;
+    }
+
+    .service-section > h3 {
+        font-size: 110%;
+    }
+
+    .service-switch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-switch > button {
+        background: transparent;
+        border: none;
+        width: 10vw;
+    }
+
+    .left-btn {
+        transform: rotate(180deg);
+        margin-right: 5%;
+    }
+
+    .right-btn {
+        margin-left: 5%;
+    }
+
+    .option-arrow {
+        width: 100%;
+    }
+
+    .service-info {
+        margin-top: 6%;
+        border: 3px solid white;
+        border-radius: 20px;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .service-image {
+        width: 80%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .service-info > p {
+        font-size: 0.9rem;
+        font-weight: 300;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .service-info > button {
+        margin-top: 3%;
+        border: none;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-bottom: 5%;
+        padding: 2% 5%;
+    }
+
+    .benefits-section {
+        text-align: center;
+        color: white;
+        margin-bottom: 200px;
+    }
+
+    .benefits-section > h1 {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: 225%;
+    }
+
+    .benefits-info {
+        background-color: #0000000f;
+    }
+
+    .benefits-info > img {
+        width: 15%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .benefits-info > h4 {
+        font-weight: 500;
+    }
+
+    .benefits-info > p {
+        width: 60%;
+        display: inline-block;
+        margin-top: 5%;
+        font-weight: 300;
+        margin-bottom: 10%;
+        font-size: 1.2rem;
+    }
+
+    .benefits-info > button {
+        background: transparent;
+        border: none;
+        width: 10vw;
+        position: relative;
+        bottom: 8rem;
+    }
+
+    .benefits-section > button {
+        margin-top: 10%;
+    }
+
+    .about-us-section {
+        text-align: center;
+        margin-top: 35%;
+        color: white;
+    }
+
+    .about-us-section > img {
+        width: 30%;
+        margin-bottom: 15%;
+    }
+
+    .about-us-section > p {
+        width: 70%;
+        margin-left: 15%;
+        font-weight: 200;
+        margin-bottom: 10%;
+    }
+
+    .background-paragraph {
+        width: 80%;
+        margin-left: 10%;
+        top: -5%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .small-devices {
+        display: none;
+    }
+
+    #large-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-hyper {
+        width: 15%;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    .navbar-items-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar-item {
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 1rem;
+        margin-left: 20px;
+    }
+
+    .dropdown {
+        width: 4%;
+        background: transparent;
+        margin-left: -10px;
+    }
+
+    #languageDropdown {
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .language-flag {
+        width: 100%;
+    }
+
+    .main-content::before {
+        display: none;
+    }
+
+    .home-page-gif {
+        width: 40%;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+    .home-page-gif img {
+        width: 100%;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .home-page-content {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .title-paragraph {
+        font-weight: 100;
+        margin-bottom: 0;
+    }
+    
+    .home-page-content > h1 {
+        margin-bottom: 60px;
+        font-weight: 600;
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    .main-content {
+        margin-bottom: 150px;
+        margin-top: 150px;
+        font-size: 1.1rem;
+        gap: 5%;
+    }
+
+    .main-content.large-devices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-paragraph {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+
+    .contact-us-btn {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .service-section.large-devices {
+        display: flex;
+        justify-content: center;
+        gap: 12%;
+        margin-bottom: 150px;
+    }
+
+    .service-options {
+        width: 25%;
+    }
+
+    .service-options > h1 {
+        font-weight: 600;
+        font-size: calc(2rem + 1.5vw);
+        margin-bottom: 30px;
+        margin-left: 12%;
+    }
+
+    .service-options > button {
+        display: block;
+        margin-bottom: 25px;
+        padding: 4.5%;
+        font-weight: 600;
+        border-radius: 8px;
+        border: none;
+        width: 250px;
+    }
+
+    .white-service-btn {
+        margin-left: -40px;
+    }
+
+    .gray-service-btn {
+        color: white;
+        background-color: #2A3757;
+        margin-left: 15px;
+    }
+
+    .service-display {
+        border: 10px solid white;
+        border-radius: 12px;
+        width: 45%;
+        text-align: center;
+    }
+
+    .service-image {
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .service-display > h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .service-display > p {
+        width: 80%;
+        margin-left: 10%;
+        font-weight: 200;
+    }
+
+    .service-display > button {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .benefits-section {
+        text-align: center;
+        color: white;
+        margin-bottom: 200px;
+    }
+
+    .benefits-section > h1 {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: 225%;
+    }
+
+    .benefits-info {
+        background-color: #0000000f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .left-btn {
+        transform: rotate(180deg);
+        margin-right: 5%;
+    }
+
+    .right-btn {
+        margin-left: 5%;
+    }
+
+    .benefits-info > img {
+        width: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .benefits-text > h4 {
+        font-weight: 600;
+    }
+
+    .benefits-text {
+        text-align: left;
+        width: 35%;
+    }
+
+    .benefits-text > p {
+        font-size: 1rem;
+        font-weight: 200    ;
+    }
+
+    .benefits-info > button {
+        background: transparent;
+        border: none;
+        width: 3%;
+    }
+
+    .benefits-section > button {
+        padding: 1.5% 3%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .about-us-section > img {
+        width: 100%;
+    }
+
+    @media (min-width: 900px){
+        .logo-hyper {
+            margin-left: 20px;
+            width: 13%;
+        }
+
+        .navbar-item {
+            font-size: 1.1rem;
+            margin-left: 40px;
+        }
+    }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1366px){
+
+    .small-devices {
+        display: none;
+    }
+
+    #large-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-hyper {
+        width: 12%;
+        margin-left: 45px;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    .navbar-items-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar-item {
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 1.1rem;
+        margin-left: 40px;
+    }
+
+    .dropdown {
+        width: 4%;
+        background: transparent;
+        margin-left: -10px;
+    }
+
+    #languageDropdown {
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .language-flag {
+        width: 100%;
+    }
+
+    .main-content::before {
+        display: none;
+    }
+
+    .home-page-gif {
+        width: 40%;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+    .home-page-gif img {
+        width: 100%;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .home-page-content {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .title-paragraph {
+        font-weight: 100;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+    }
+    
+    .home-page-content > h1 {
+        margin-bottom: 60px;
+        font-weight: 600;
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    .main-content {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 1.1rem;
+        gap: 5%;
+    }
+
+    .main-content.large-devices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-paragraph {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        font-weight: 200;
+        font-size: 1.3rem;
+    }
+
+    .contact-us-btn {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .service-section.large-devices {
+        display: flex;
+        justify-content: center;
+        gap: 12%;
+        margin-bottom: 150px;
+    }
+
+    .service-options {
+        width: 25%;
+        position: relative;
+        left: 40px
+    }
+
+    .service-options > h1 {
+        font-weight: 600;
+        font-size: calc(2rem + 1.5vw);
+        margin-bottom: 30px;
+        margin-left: 5%;
+    }
+
+    .service-options > button {
+        display: block;
+        margin-bottom: 25px;
+        padding: 4.5%;
+        font-weight: 600;
+        border-radius: 8px;
+        border: none;
+        width: 260px;
+    }
+
+    .white-service-btn {
+        margin-left: -40px;
+    }
+
+    .gray-service-btn {
+        color: white;
+        background-color: #2A3757;
+        margin-left: 15px;
+    }
+
+    .service-display {
+        border: 10px solid white;
+        border-radius: 12px;
+        width: 45%;
+        text-align: center;
+        position: relative;
+        left: 50px;
+    }
+
+    .service-image {
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .service-display > h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .service-display > p {
+        width: 80%;
+        margin-left: 10%;
+        font-weight: 200;
+        font-size: 1.1rem;
+    }
+
+    .service-display > button {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .benefits-section {
+        text-align: center;
+        color: white;
+        margin-bottom: 200px;
+    }
+
+    .benefits-section > h1 {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    .benefits-info {
+        background-color: #0000000f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .left-btn {
+        transform: rotate(180deg);
+        margin-right: 5%;
+    }
+
+    .right-btn {
+        margin-left: 5%;
+    }
+
+    .benefits-info > img {
+        width: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .benefits-text > h4 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .benefits-text {
+        text-align: left;
+        width: 35%;
+    }
+
+    .benefits-text > p {
+        font-size: 1.1rem;
+        font-weight: 200    ;
+    }
+
+    .benefits-info > button {
+        background: transparent;
+        border: none;
+        width: 3%;
+    }
+
+    .benefits-section > button {
+        padding: 1.5% 3%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .about-us-section > img {
+        width: 100%;
+    }
+
+    @media (min-width: 1260px){
+        .logo-hyper {
+            width: 11%;
+        }
+        .intro-paragraph {
+            font-size: 1.5rem;
+        }
+        .navbar-item {
+            font-size: 1.15rem;
+            margin-left: 60px;
+        }
+        .dropdown {
+            width: 3.5%;
+        }
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1600px){
+
+    .small-devices {
+        display: none;
+    }
+
+    #large-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-hyper {
+        width: 10%;
+        margin-left: 85px;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    .navbar-items-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar-item {
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 1.2rem;
+        margin-left: 80px;
+    }
+
+    .dropdown {
+        width: 3%;
+        background: transparent;
+        margin-left: -10px;
+    }
+
+    #languageDropdown {
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .language-flag {
+        width: 100%;
+    }
+
+    .main-content::before {
+        display: none;
+    }
+
+    .home-page-gif {
+        width: 40%;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+    .home-page-gif img {
+        width: 100%;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .home-page-content {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .title-paragraph {
+        font-weight: 100;
+        margin-bottom: 0;
+        font-size: 1.8rem;
+    }
+    
+    .home-page-content > h1 {
+        margin-bottom: 60px;
+        font-weight: 700;
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    .main-content {
+        margin-top: 150px;
+        margin-bottom: 200px;
+        font-size: 1.1rem;
+        gap: 3%;
+    }
+
+    .main-content.large-devices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-paragraph {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        font-weight: 200;
+        font-size: 1.6rem;
+    }
+
+    .contact-us-btn {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .service-section.large-devices {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        margin-bottom: 200px;
+    }
+
+    .service-options {
+        width: 25%;
+        position: relative;
+        left: 40px
+    }
+
+    .service-options > h1 {
+        font-weight: 600;
+        font-size: calc(2rem + 1.5vw);
+        margin-bottom: 30px;
+        margin-left: 5%;
+    }
+
+    .service-options > button {
+        display: block;
+        margin-bottom: 25px;
+        padding: 4.5%;
+        font-weight: 600;
+        border-radius: 8px;
+        border: none;
+        width: 260px;
+    }
+
+    .white-service-btn {
+        margin-left: -40px;
+    }
+
+    .gray-service-btn {
+        color: white;
+        background-color: #2A3757;
+        margin-left: 15px;
+    }
+
+    .service-display {
+        border: 10px solid white;
+        border-radius: 12px;
+        width: 45%;
+        text-align: center;
+        position: relative;
+        left: 50px;
+    }
+
+    .service-image {
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .service-display > h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .service-display > p {
+        width: 80%;
+        margin-left: 10%;
+        font-weight: 200;
+        font-size: 1.1rem;
+    }
+
+    .service-display > button {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .benefits-section {
+        text-align: center;
+        color: white;
+        margin-bottom: 200px;
+    }
+
+    .benefits-section > h1 {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    .benefits-info {
+        background-color: #0000000f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .left-btn {
+        transform: rotate(180deg);
+        margin-right: 5%;
+    }
+
+    .right-btn {
+        margin-left: 5%;
+    }
+
+    .benefits-info > img {
+        width: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .benefits-text > h4 {
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    .benefits-text {
+        text-align: left;
+        width: 35%;
+    }
+
+    .benefits-text > p {
+        font-size: 1.2rem;
+        font-weight: 200    ;
+    }
+
+    .benefits-info > button {
+        background: transparent;
+        border: none;
+        width: 3%;
+    }
+
+    .benefits-section > button {
+        padding: 1.5% 3%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .about-us-section > img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1601px) {
+
+    .small-devices {
+        display: none;
+    }
+
+    #large-navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-hyper {
+        width: 10%;
+        margin-left: 85px;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    .navbar-items-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar-item {
+        color: white;
+        text-decoration: none;
+        font-weight: 200;
+        font-size: 1.4rem;
+        margin-left: 80px;
+    }
+
+    .dropdown {
+        width: 3%;
+        background: transparent;
+        margin-left: -10px;
+    }
+
+    #languageDropdown {
+        padding: 0;
+        border: none;
+        background: transparent;
+    }
+
+    .language-flag {
+        width: 100%;
+    }
+
+    .main-content::before {
+        display: none;
+    }
+
+    .home-page-gif {
+        width: 40%;
+        display: inline-block;
+        opacity: 0.5;
+    }
+
+    .home-page-gif img {
+        width: 100%;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .home-page-content {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .title-paragraph {
+        font-weight: 100;
+        margin-bottom: 0;
+        font-size: 1.9rem;
+    }
+    
+    .home-page-content > h1 {
+        margin-bottom: 60px;
+        font-weight: 700;
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    .main-content {
+        margin-top: 200px;
+        margin-bottom: 200px;
+        font-size: 1.1rem;
+        gap: 3%;
+    }
+
+    .main-content.large-devices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-paragraph {
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+        font-weight: 200;
+        font-size: 1.7rem;
+    }
+
+    .contact-us-btn {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+
+    .service-section.large-devices {
+        display: flex;
+        justify-content: center;
+        gap: 4%;
+        margin-bottom: 200px;
+    }
+
+    .service-options {
+        width: 25%;
+        position: relative;
+        left: 40px
+    }
+
+    .service-options > h1 {
+        font-weight: 600;
+        font-size: calc(2rem + 1.5vw);
+        margin-bottom: 30px;
+        margin-left: 5%;
+    }
+
+    .service-options > button {
+        display: block;
+        margin-bottom: 25px;
+        padding: 4.5%;
+        font-weight: 600;
+        border-radius: 8px;
+        border: none;
+        width: 280px;
+    }
+
+    .white-service-btn {
+        margin-left: -40px;
+    }
+
+    .gray-service-btn {
+        color: white;
+        background-color: #2A3757;
+        margin-left: 15px;
+    }
+
+    .service-display {
+        border: 10px solid white;
+        border-radius: 12px;
+        width: 45%;
+        text-align: center;
+        position: relative;
+        left: 50px;
+    }
+
+    .service-image {
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .service-display > h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .service-display > p {
+        width: 80%;
+        margin-left: 10%;
+        font-weight: 200;
+        font-size: 1.1rem;
+    }
+
+    .service-display > button {
+        padding: 2.5% 4%;
+        font-weight: 600;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .about-us-section > img {
+        width: 100%;
+    }
+
+    .benefits-section {
+        text-align: center;
+        color: white;
+        margin-bottom: 200px;
+    }
+
+    .benefits-section > h1 {
+        font-weight: 600;
+        margin-bottom: 60px;
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    .benefits-info {
+        background-color: #0000000f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .left-btn {
+        transform: rotate(180deg);
+        margin-right: 5%;
+    }
+
+    .right-btn {
+        margin-left: 5%;
+    }
+
+    .benefits-info > img {
+        width: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .benefits-text > h4 {
+        font-weight: 600;
+        font-size: 1.9rem;
+    }
+
+    .benefits-text {
+        text-align: left;
+        width: 35%;
+    }
+
+    .benefits-text > p {
+        font-size: 1.5rem;
+        font-weight: 200    ;
+    }
+
+    .benefits-info > button {
+        background: transparent;
+        border: none;
+        width: 3%;
+    }
+
+    .benefits-section > button {
+        padding: 1.5% 3%;
+        font-weight: 600;
+        border-radius: 50px;
+        margin-top: 50px;
+    }
+}
