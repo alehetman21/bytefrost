@@ -62,7 +62,7 @@ body {
 
 .nav-item.dropdown {
     list-style-type: none;
-    width: 400px;
+    width: 120px;
 }
 
 .offcanvas-body {
@@ -90,7 +90,7 @@ body {
 }
 
 .small-devices-language-flag {
-    width: 10%;
+    width: 35px;
 }
 
 .nav-link{
