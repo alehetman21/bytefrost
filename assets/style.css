@@ -50,8 +50,19 @@ body {
     background: transparent;
 }
 
+.offcanvas {
+    width: 100% !important;
+}
+
 .offcanvas-header {
-    align-items: start !important;
+    align-items: center !important;
+    background: radial-gradient(circle , #15171f, #03071b) fixed;
+    justify-content: space-between !important;
+}
+
+.nav-item.dropdown {
+    list-style-type: none;
+    width: 230px;
 }
 
 .offcanvas-body {
