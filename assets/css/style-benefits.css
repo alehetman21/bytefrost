@@ -1,0 +1,1046 @@
+body {
+    background: radial-gradient(circle , #001d6b, #03071b) fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+/* First Page */
+
+.firstPageTablet-benefits {
+    display: none;
+}
+
+.firstPageComputer-benefits {
+    display: none;
+}
+
+.firstPage-benefits {
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10%;
+}
+
+
+.firstPage-benefits .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.firstPage-benefits .swiper {
+    width: 90%;
+}
+
+.firstPage-benefits .swiper-wrapper {
+    margin-bottom: 10%;
+}
+
+.firstPage-benefits .swiper-slide {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.firstPage-benefits .row {
+    position: relative;
+    display: inline-block;
+    margin: 20px; /* Ajusta el espacio entre las filas según tus necesidades */
+}
+
+.firstPage-benefits img {
+    max-width: 40%;
+    height: auto;
+    opacity: 0.1;
+}
+
+.firstPage-benefits h1 {
+    color: white;
+    margin-bottom: 10%;
+    font-size: 40px;
+}
+
+.firstPage-benefits h2 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 20px;
+    
+}
+
+
+.firstPage-benefits .pepe {
+    display: none;
+}
+
+
+/* Second Page */
+
+.secondPage-benefits {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -80px;
+}
+
+.secondPage-benefits .swiper {
+    width: 90%;
+}
+
+.secondPage-benefits .swiper-slide {
+    border: 2px solid white;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+.secondPage-benefits .swiper-slide img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.secondPage-benefits .swiper-slide h2 {
+    color: white;
+    padding: 20px;
+}
+
+.secondPage-benefits .swiper-slide p {
+    color: white;
+    font-size: smaller;
+    padding: 50px;
+    margin-top: -45px;
+}
+
+/* Personaliza la posición de la paginación */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+
+/* Personaliza el color de los puntos inactivos */
+.swiper-pagination-bullet {
+    background-color: #fff; /* Color blanco para los puntos inactivos */
+    width: 10px; /* Ancho de cada punto */
+    height: 10px; /* Altura de cada punto */
+    margin: 0 5px; /* Margen entre los puntos */
+}
+
+/* Personaliza el color del punto activo */
+.swiper-pagination-bullet-active {
+    background-color: #fff; /* Color blanco para el punto activo */
+}
+
+
+/* Third Page */
+.thirdPage-benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -80px;
+    position: relative;
+}
+
+.content-third-page {
+    position: absolute;
+    top: 2;
+    left: 0;
+    right: 0;
+}
+
+.content-third-page p {
+    color: rgb(219, 216, 216);
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    font-size: 12px;
+    
+}
+
+.content-third-page h2 {
+    color: white;
+    margin-bottom: 60px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* Fourth Page */
+.fourthPage-benefits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -80px;
+    position: relative;
+    color: white
+}
+
+.fourthPage-benefits h2 {
+    font-size: 26.5px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+.fourthPage-benefits h3 {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.fourthPage-benefits p {
+    font-size: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+
+}
+
+#visibilityPercentage2 {
+    display: none;
+}
+
+/* Contact Us */
+
+.contact-us-computer-section {
+    display: none;
+}
+
+.contact-us-section {
+    text-align: center;
+    color: white;
+    height: 100vh;
+    margin-top: 120px;
+}
+
+.contact-us-section h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+
+input,
+textarea {
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    border: none;
+    border-bottom: 3px solid white; /* Add an underline border */
+    background-color: transparent; /* Optional: Make background transparent */
+    color: white; /* Set text color to white */
+    padding: 5px; /* Optional: Add padding for better spacing */
+    outline: none; /* Remove the outline on focus */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 17px; /* Ajusta el tamaño según tus preferencias */
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#message {
+    height: 150px; /* Adjust the height as needed */
+}
+
+#send-btn {
+    display: block;
+    margin: 0 auto;
+    width: 23%;
+    background-color: white; /* Button background color */
+    color: black; /* Button text color */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+    border: 0;
+    padding: 10px; /* Optional: Add padding for better button appearance */
+    font-weight: bold;
+    font-size: 70%;
+}
+
+/* Last Part */
+
+.bottom-bar {
+    display: none;
+}
+
+.bottom-page-section {
+    text-align: center;
+    border-top: 1px solid #fff;
+
+  }
+  
+  .socials-icons-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-top: 20px;
+  }
+  
+  .first-socials-icons,
+  .second-socials-icons {
+    display: flex; /* Alinea los íconos en la misma línea */
+  }
+  
+  .first-socials-icons img,
+  .second-socials-icons img {
+    width: 30px; /* Ajusta el tamaño de los íconos según tus necesidades */
+    height: 30px; /* Ajusta el tamaño de los íconos según tus necesidades */
+    margin-right: 1px; /* Ajusta el espacio entre los íconos, si es necesario */
+  }
+  
+  .upper-button {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .upper-button img {
+    width: 60px;
+  }
+  
+  .terms {
+    display: inline;
+    margin-top: 20px;
+    font-size: 10px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: white;
+  }
+
+  .bar {
+    display: inline;
+    margin-top: 20px;
+    font-size: 10px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: white;
+  }
+
+  .privacy-policy {
+    font-size: 10px; /* Ajusta el tamaño del texto según tus necesidades */
+    color: white;
+    display: inline;
+    text-align: end;
+
+  }
+
+  .Copyright {
+    text-align: center; /* Centra el texto */
+    color: white;
+    font-size: 8px;
+  }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .firstPage-benefits {
+        display: none;
+    }
+
+    .firstPageComputer-benefits {
+        display: none;
+    }
+
+    .firstPageTablet-benefits {
+        overflow-x: auto;
+        white-space: nowrap;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 10%;
+    }
+    
+    .firstPageTablet-benefits .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .firstPageTablet-benefits .swiper {
+        width: 90%;
+    }
+    
+    .firstPageTablet-benefits .swiper-wrapper {
+        margin-bottom: 10%;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; /* Ajusta el espacio entre las imágenes según tus necesidades */
+    }
+    
+    .grid-item {
+        position: relative;
+        text-align: center;
+    }
+    
+    .firstPageTablet-benefits img {
+        max-width: 40%;
+        height: auto;
+        opacity: 0.1;
+    }
+    
+    .firstPageTablet-benefits h1 {
+        color: white;
+        margin-bottom: 5%;
+        margin-top: 10%;
+        font-size: 40px;
+    }
+    
+    .firstPageTablet-benefits h2 {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    .firstPageTablet-benefits .pepe {
+        display: none;
+    }
+
+    /* Second Page */
+
+    .secondPage-benefits {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -80px;
+    }
+
+    .secondPage-benefits .swiper {
+        width: 80%;
+    }
+
+    .secondPage-benefits .swiper-slide {
+        border: 2px solid white;
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .secondPage-benefits .swiper-slide img {
+        width: 160px;
+        height: 160px;
+        margin-top: 20px;
+    }
+
+    .secondPage-benefits .swiper-slide h2 {
+        color: white;
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    .secondPage-benefits .swiper-slide p {
+        color: white;
+        font-size: 20px;
+        padding: 50px;
+        margin-top: -45px;
+    }
+
+    /* Personaliza la posición de la paginación */
+    .swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+    }
+
+    /* Personaliza el color de los puntos inactivos */
+    .swiper-pagination-bullet {
+        background-color: #fff; /* Color blanco para los puntos inactivos */
+        width: 10px; /* Ancho de cada punto */
+        height: 10px; /* Altura de cada punto */
+        margin: 0 5px; /* Margen entre los puntos */
+    }
+
+    /* Personaliza el color del punto activo */
+    .swiper-pagination-bullet-active {
+        background-color: #fff; /* Color blanco para el punto activo */
+    }
+    
+    /* Third Page */
+    .thirdPage-benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -80px;
+        position: relative;
+    }
+
+    .content-third-page p {
+        color: rgb(219, 216, 216);
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: justify;
+        font-size: 18px;
+        
+    }
+
+    .content-third-page h2 {
+        color: white;
+        margin-bottom: 60px;
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 20%;
+        font-size: 35px;
+    }
+
+    /* Fourth Page */
+
+    .fourthPage-benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 10%;
+        position: relative;
+        color: white
+    }
+
+    .fourthPage-benefits h2 {
+        font-size: 35px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+    }
+
+    .fourthPage-benefits h3 {
+        font-size: 100px;
+        font-weight: bold;
+    }
+
+    .fourthPage-benefits p {
+        font-size: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
+        text-align: center;
+
+    }
+
+    #visibilityPercentage2 {
+        display: none;
+    }
+
+    /* Contact Us */
+    
+    .contact-us-computer-section {
+        display: none;
+    }
+
+    .contact-us-section {
+        text-align: center;
+        color: white;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .contact-us-section h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+
+    input,
+    textarea {
+        width: 80%;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+        border: none;
+        border-bottom: 3px solid white; /* Add an underline border */
+        background-color: transparent; /* Optional: Make background transparent */
+        color: white; /* Set text color to white */
+        padding: 5px; /* Optional: Add padding for better spacing */
+        outline: none; /* Remove the outline on focus */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 17px; /* Ajusta el tamaño según tus preferencias */
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    #message {
+        height: 150px; /* Adjust the height as needed */
+    }
+
+    #send-btn {
+        display: block;
+        margin: 0 auto;
+        width: 23%;
+        background-color: white; /* Button background color */
+        color: black; /* Button text color */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 20px;
+        border: 0;
+        padding: 10px; /* Optional: Add padding for better button appearance */
+        font-weight: bold;
+        font-size: 70%;
+    }
+
+    /* Last Part */
+
+    .bottom-bar {
+        display: none;
+    }
+
+    .bottom-page-section {
+        text-align: center;
+        border-top: 1px solid #fff;
+
+    }
+
+    .socials-icons-container {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        margin-top: 20px;
+    }
+
+    .first-socials-icons,
+    .second-socials-icons {
+        display: flex; /* Alinea los íconos en la misma línea */
+    }
+
+    .first-socials-icons img,
+    .second-socials-icons img {
+        width: 30px; /* Ajusta el tamaño de los íconos según tus necesidades */
+        height: 30px; /* Ajusta el tamaño de los íconos según tus necesidades */
+        margin-right: 1px; /* Ajusta el espacio entre los íconos, si es necesario */
+    }
+
+    .upper-button {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .upper-button img {
+        width: 60px;
+    }
+
+    .terms {
+        display: inline;
+        margin-top: 20px;
+        font-size: 10px; /* Ajusta el tamaño del texto según tus necesidades */
+        color: white;
+    }
+
+    .bar {
+        display: inline;
+        margin-top: 20px;
+        font-size: 10px; /* Ajusta el tamaño del texto según tus necesidades */
+        color: white;
+    }
+
+    .privacy-policy {
+        font-size: 10px; /* Ajusta el tamaño del texto según tus necesidades */
+        color: white;
+        display: inline;
+        text-align: end;
+
+    }
+
+    .Copyright {
+        text-align: center; /* Centra el texto */
+        color: white;
+        font-size: 8px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1025px) {
+
+
+    /* first page */
+    .firstPage-benefits {
+        display: none;
+    }
+
+    .firstPageTablet-benefits {
+       
+        white-space: nowrap;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    
+    .firstPageTablet-benefits .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .firstPageTablet-benefits .swiper {
+        width: 90%;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; /* Ajusta el espacio entre las imágenes según tus necesidades */
+    }
+    
+    .grid-item {
+        position: relative;
+        text-align: center;
+    }
+    
+    .firstPageTablet-benefits img {
+        max-width: 45%;
+        height: auto;
+        opacity: 0.1;
+    }
+    
+    .firstPageTablet-benefits h1 {
+        color: white;
+        margin-bottom: 5%;
+        margin-top: 10%;
+        font-size: 50px;
+    }
+    
+    .firstPageTablet-benefits h2 {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    .firstPageTablet-benefits .pepe {
+        display: none;
+    }
+
+    /* Second Page */
+
+    .secondPage-benefits {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -80px;
+    }
+
+    .secondPage-benefits .swiper {
+        width: 80%;
+    }
+
+    .secondPage-benefits .swiper-slide {
+        border: 2px solid white;
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    .secondPage-benefits .swiper-slide img {
+        width: 260px;
+        height: 260px;
+        margin-top: 20px;
+    }
+
+    .secondPage-benefits .swiper-slide h2 {
+        color: white;
+        padding: 20px;
+        font-size: 45px;
+    }
+
+    .secondPage-benefits .swiper-slide p {
+        color: white;
+        font-size: 20px;
+        padding: 50px;
+        margin-top: -45px;
+    }
+
+    /* Personaliza la posición de la paginación */
+    .swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+    }
+
+    /* Personaliza el color de los puntos inactivos */
+    .swiper-pagination-bullet {
+        background-color: #fff; /* Color blanco para los puntos inactivos */
+        width: 10px; /* Ancho de cada punto */
+        height: 10px; /* Altura de cada punto */
+        margin: 0 5px; /* Margen entre los puntos */
+    }
+
+    /* Personaliza el color del punto activo */
+    .swiper-pagination-bullet-active {
+        background-color: #fff; /* Color blanco para el punto activo */
+    }
+    
+    /* Third Page */
+    .thirdPage-benefits {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -80px;
+        position: relative;
+    }
+
+    .content-third-page p {
+        color: rgb(219, 216, 216);
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: justify;
+        font-size: 25px;
+        
+    }
+
+    .content-third-page h2 {
+        color: white;
+        margin-bottom: 60px;
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 20%;
+        font-size: 50px;
+    }
+
+    /* Fourth Page */
+
+    .fourthPage-benefits {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        width: 90%; /* Ancho total del contenedor principal, ajusta según sea necesario */
+        margin-left: 5%;
+    }
+    
+    .fourthPage-benefits h2 {
+        font-size: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    
+    .fourthPage-benefits h3 {
+        font-size: 140px;
+        font-weight: bold;
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    .fourthPage-benefits p {
+        font-size: 20px;
+        width: 800px; /* Ancho del contenedor del texto, ajusta según sea necesario */
+        display: inline-block;
+    }
+
+    #visibilityPercentage {
+        display: none;
+    }
+
+   /* Contac Us */
+  .contact-us-section {
+        display: none;
+    }
+
+    .contact-us-computer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .contact-us-computer-section h2 {
+        margin-bottom: 80px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column; /* Cambiado a columna */
+        align-items: center;
+    }
+
+    .columns {
+        display: flex;
+        justify-content: space-between;
+        width: 200%;
+    }
+
+    .column {
+        width: 45%; /* Ajusta el ancho según tus necesidades */
+        margin-bottom: 10px;
+    }
+
+    .contact-us-computer-section input,
+    .contact-us-computer-section textarea {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 50px;
+        border: none;
+        border-bottom: 3px solid white;
+        background-color: transparent; 
+        color: white; 
+        padding: 5px; 
+        outline: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .contact-us-computer-section input::placeholder,
+    .contact-us-computer-section textarea::placeholder {
+        font-size: 17px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    .contact-us-computer-section #message {
+        height: 210px;
+    }
+
+    .contact-us-computer-section button {
+        width: 30%; /* Ajusta el ancho según tus necesidades */
+        background-color: white;
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border-radius: 20px;
+        border: 0;
+        padding: 10px; 
+        font-weight: bold;
+        font-size: 70%;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+
+
+    /* Last Part */
+
+    .bottom-page-section {
+        display: none;
+    }
+
+    .bottom-bar {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 10px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pageColumn1, .pageColumn2 {
+        margin-bottom: 7px;
+    }
+
+    .image-column img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    .image-column > div {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .image-logo img {
+        max-width: 50px;
+    }
+
+    .terms {
+        font-size: 10px;
+        margin-top: 14px;
+    }
+
+    .icon-column {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-column img {
+        margin-right: 10px;
+    }
+
+    .terms-privacy {
+        text-align: center;
+    }
+
+    .homePage, .benefitsPage, .servicesPage, .aboutPage {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .servicesPage {
+        font-weight: bold;
+    }
+
+}
+
+
