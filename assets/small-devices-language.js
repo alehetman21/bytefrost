@@ -5,36 +5,37 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             translations = data;
+            region = getLanguageFromRegion();
+            changeLanguage(region);
 
             // Obtener todos los elementos que necesitan ser traducidos
             const translatableElements = document.querySelectorAll('[data-translate-key]');
 
             // Recorrer cada elemento y establecer su contenido traducido
-            translatableElements.forEach(element => {
-                const translateKey = element.getAttribute('data-translate-key');
-                translateElement(element, translateKey);
-            });
 
             // Manejar el cambio de idioma al hacer clic en un enlace de idioma
             const languageDropdown = document.getElementById('languageDropdown');
             const languageMenu = document.getElementById('language-dropdown-menu');
 
-            const languageItems = document.querySelectorAll('.small-language-item');
-            languageItems.forEach(function (item) {
-                item.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    const selectedLang = item.getAttribute('data-lang');
-                    changeLanguage(selectedLang);
-
-                    // Actualizar la lista de idiomas en el dropdown
-                    updateLanguageDropdown(selectedLang);
-                });
-            });
-
-            // Inicializar la lista de idiomas en el dropdown
-            updateLanguageDropdown('en');
+            updateLanguageDropdown(region);
+            const languageFlag = document.getElementById('small-devices-current-language-flag');
+            languageFlag.src = `../small-${region}.png`;
         })
         .catch(error => console.error('Error loading translations', error));
+
+    function getLanguageFromRegion() {
+        // Obtener la información de geolocalización del navegador
+        const userRegion = navigator.language || navigator.userLanguage;
+
+        // Determinar el idioma según la región
+        if (userRegion.startsWith('es')) {
+            return 'es';
+        } else if (userRegion.startsWith('fr')) {
+            return 'fr';
+        } else {
+            return 'en';
+        }
+    }
 
     function changeLanguage(lang) {
         if (translations && translations[lang]) {
@@ -96,9 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-    
-    // Resto del código...
-    
 
     function getLanguageFullName(lang) {
         switch (lang) {
