@@ -4,12 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteFrost</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
 
-    <div id="navbars-container">
+    <div class="navbar-container small-devices">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid mx-3">
+                <a href="index.html" class="navbar-brand logo-hyper">
+                    <img src="assets/Images/main-logo.png" alt="ByteFrost" id="logo">
+                </a>    
+              <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <img class="navbar-toggler-icon" id="options-btn" src="assets/menu-icon-png-3-lines-11552739317jfnbfzzmez-removebg-preview.png">
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header" id="custom-offcanvas-header">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/small-en.png" alt="" class="small-devices-language-flag" id="small-devices-current-language-flag">
+                            Language
+                        </a>
+                      <ul class="dropdown-menu" id="languageDropdownMobile">
+                      </ul>
+                    </li>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item redirect">
+                        <a class="home-offcanvas" aria-current="page" href="./index.html" data-translate-key="home">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item redirect">
+                        <a aria-current="page" href="assets/webpages/services.html" data-translate-key="services">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item redirect">
+                        <a aria-current="page" href="assets/webpages/benefits.html" data-translate-key="benefits">
+                            Benefits
+                        </a>
+                    </li>
+                    <li class="nav-item redirect">
+                        <a aria-current="page" href="assets/webpages/about-us.html" data-translate-key="about_us">
+                            About us
+                        </a>
+                    </li>
+                    <li class="nav-item redirect">
+                        <a aria-current="page" href="#" data-translate-key="contact_us">
+                            Contact us
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+    <div class="navbar-container large-devices" id="large-navbar">
+        <a href="index.html" class="navbar-brand logo-hyper">
+            <img src="assets/Images/main-logo.png" alt="ByteFrost" id="logo">
+        </a>
+        <div class="navbar-items-container">
+            <a href="assets/webpages/index.html" class="navbar-item" data-translate-key="home">Home</a> 
+            <a href="assets/webpages/services.html" class="navbar-item" data-translate-key="services">Services</a> 
+            <a href="assets/webpages/benefits.html" class="navbar-item" data-translate-key="benefits">Benefits</a> 
+            <a href="assets/webpages/about-us.html" class="navbar-item" data-translate-key="about_us">About us</a> 
+            <a href="#contact-us-section" class="navbar-item" data-translate-key="contact_us">Contact us</a> 
+        </div>
+        <div class="dropdown">
+            <!-- Botón del dropdown con la imagen de la bandera -->
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/en.png" alt="Language" class="language-flag" id="current-language-flag">
+            </button>
+            <!-- Contenido del dropdown -->
+            <ul class="dropdown-menu" aria-labelledby="languageDropdown" id="language-dropdown-menu">
+            </ul>
+        </div>
     </div>
 
     <div class="main-content small-devices">
@@ -22,7 +96,7 @@
     </div>
     <div class="main-content large-devices">
         <div class="home-page-gif">
-            <img src="../Images/home-page/home-animation.gif" alt="ByteFrost">
+            <img src="assets/Images/home-page/home-animation.gif" alt="ByteFrost">
         </div>
         <div class="home-page-content">
             <p class="title-paragraph">WE<span data-translate-key="design"> DESIGN </span> WE<span data-translate-key="build"> BUILD </span>WE<span data-translate-key="deploy"> DEPLOY </span></p>
@@ -39,15 +113,15 @@
             <h1 data-translate-key="services_caps">SERVICES</h1>
             <div class="service-switch">
                 <button class="left-btn" aria-label="Left Button">
-                    <img src="../6934330_arrow_direction_next_right_icon.png" alt="left-arrow" class="option-arrow">
+                    <img src="assets/6934330_arrow_direction_next_right_icon.png" alt="left-arrow" class="option-arrow">
                 </button>
                 <h3 id="service-title">WEBSITE DEVELOPMENT</h3>
                 <button class="right-btn" aria-label="Right Button">
-                    <img src="../6934330_arrow_direction_next_right_icon.png" alt="right-arrow" class="option-arrow">
+                    <img src="assets/6934330_arrow_direction_next_right_icon.png" alt="right-arrow" class="option-arrow">
                 </button>
             </div>
             <div class="service-info">
-                <img src="../Screenshot 2024-01-01 at 14.49.47.png" alt="WEBSITE" class="service-image">
+                <img src="assets/Screenshot 2024-01-01 at 14.49.47.png" alt="WEBSITE" class="service-image">
                 <p id="service-description">For years, we have been supporting all kind of companies in creating 
                     world-class webpages moving them closer to their dreams
                 </p>
@@ -66,7 +140,7 @@
                 <button class="gray-service-btn" onclick="showContent('wordpress-development')">WORDPRESS DEVELOPMENT</button>
             </div>
             <div class="service-display" id="service-display">
-                <img src="../Screenshot 2024-01-01 at 14.49.47.png" alt="WEBSITE" class="service-image">
+                <img src="assets/Screenshot 2024-01-01 at 14.49.47.png" alt="WEBSITE" class="service-image">
                 <h3>WEBSITE DEVELOPMENT</h3>
                 <p>For years, we have been supporting all kind of companies in creating 
                     world-class webpages moving them closer to their dreams
@@ -80,17 +154,17 @@
         <div class="benefits-section small-devices">
             <h1>BENEFITS</h1>
             <div class="benefits-info">
-                <img src="../kisspng-globe-world-icon-world-png-file-5a77e7a0248332.0330429615178075201496-removebg-preview.png" alt="" class="benefits-image">
+                <img src="assets/kisspng-globe-world-icon-world-png-file-5a77e7a0248332.0330429615178075201496-removebg-preview.png" alt="" class="benefits-image">
                 <h4 class="benefits-title">GLOBAL PRESENCE</h4>
                 <button class="left-benefits-btn left-btn">
-                    <img src="../6934330_arrow_direction_next_right_icon.png" class="option-arrow" alt="">
+                    <img src="assets/6934330_arrow_direction_next_right_icon.png" class="option-arrow" alt="">
                 </button>
                 <p class="benefits-description">
                     A professional website allows businesses to establish a global presence,
                     reaching potential customers beyond their local area or region.
                 </p>
                 <button class="right-benefits-btn right-btn">
-                    <img src="../6934330_arrow_direction_next_right_icon.png" class="option-arrow" alt="">
+                    <img src="assets/6934330_arrow_direction_next_right_icon.png" class="option-arrow" alt="">
                 </button>
             </div>
             <button class="contact-us-btn">CONTACT US</button>
@@ -101,7 +175,7 @@
                 <button class="left-btn left-benefits-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="-0.0 -0.0 10.1 19.0" zoomAndPan="magnify" style="fill: rgb(255, 255, 255);" original_string_length="467"><g data-name="Layer 2"><g data-name="Layer 1" id="__id136_snorr0lugf"><path d="M.5,19a.5.5,0,0,1-.354-.854L8.774,9.5.146.853A.5.5,0,1,1,.854.147l8.98,9a.5.5,0,0,1,0,.706l-8.98,9A.5.5,0,0,1,.5,19Z" style="fill: inherit;"/></g></g></svg>
                 </button>
-                <img src="../kisspng-globe-world-icon-world-png-file-5a77e7a0248332.0330429615178075201496-removebg-preview.png" alt="">
+                <img src="assets/kisspng-globe-world-icon-world-png-file-5a77e7a0248332.0330429615178075201496-removebg-preview.png" alt="">
                 <div class="benefits-text">
                     <h4 class="benefits-title">GLOBAL PRESENCE</h4>
                     <p class="benefits-description">
@@ -119,7 +193,7 @@
 
     <div class="background-paragraph-container">
         <div class="about-us-section">
-            <img src="../Images/main-logo.png" alt="ByteFrost">
+            <img src="assets/Images/main-logo.png" alt="ByteFrost">
             <p>We are an experienced digital agency born to help companies to achieve 
                 their goals in a passionate, dedicated, and committed way, delivering 
                 excellent results. We are proud to have professionals with extensive 
@@ -204,13 +278,13 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="../language.js"></script>
-    <script src="../small-devices-language.js"></script>
-    <script src="../small-devices-services.js"></script>
-    <script src="../services.js"></script>
-    <script src="../scroll-contact-us.js"></script>
-    <script src="../service-redirect.js"></script>
-    <script src="../benefits.js"></script>
+    <script src="assets/language.js"></script>
+    <script src="assets/small-devices-language.js"></script>
+    <script src="assets/small-devices-services.js"></script>
+    <script src="assets/services.js"></script>
+    <script src="assets/scroll-contact-us.js"></script>
+    <script src="assets/service-redirect.js"></script>
+    <script src="assets/benefits.js"></script>
     <script></script>
     <script>
         // Espera a que el DOM esté listo
@@ -220,13 +294,6 @@
     
             // Aplica la altura al offcanvas-header
             $("#custom-offcanvas-header").outerHeight(navbarHeight);
-        });
-    </script>
-    <script>
-        fetch('./navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbars-container').innerHTML = data;
         });
     </script>
 </body>
