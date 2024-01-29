@@ -12,6 +12,7 @@
         />
     <link rel="stylesheet"  href="../css/style-benefits.css" />
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-footer.css">
     <title>Benefits</title>
 </head>
 <body>
@@ -213,79 +214,9 @@
         </form>
     </div>
 
-    <!-- Last Part -->
-    <div class="bottom-page-section">
-        <div class="socials-icons-container">
-            <div class="first-socials-icons">
-                <img src="../Images/social-logos/InstagramLogo.png" alt="Instagram Logo">
-                <img src="../Images/social-logos/PinterestLogo.png" alt="Pinterest Logo">
-            </div>
-            <div class="upper-button" onclick="scrollToTop()">
-                <img src="../Images/UpperIcon.png" />
-            </div>
-            <div class="second-socials-icons">
-                <img src="../Images/social-logos/LinkedInLogo.png" alt="LinkedIn Logo">
-                <img src="../Images/social-logos/TwitterLogo.png" alt="Twitter Logo">
-            </div>
-        </div>
-        <p class="terms">Terms & Conditions</p>
-        <p class="bar">/</p>
-        <p class="privacy-policy">Privacy Policy</p>
-        <p class="Copyright">Copyright © 2024 ByteFrost Studios</p>
-    </div>
-
-    <div class="bottom-bar">
-        <!-- Columna 1 -->
-        <div class="column">
-            <div class="pageColumn1">
-                <span class="homePage">Home</span>
-                <span class="aboutPage">About</span>
-            </div>
-            <div class="pageColumn2">
-                <span class="benefitsPage">Benefits</span>
-                <span class="servicesPage">Services</span>
-            </div>
-            <div class="contactUsPage">Contact Us</div>
-        </div>
-
-        <!-- Columna 2 -->
-        <div class="column image-column">
-            <img src="../Images/main-logo.png" alt="Copyright">
-            <div>Copyright © 2023 ByteFrost Studios</div>
-        </div>
-
-        <!-- Columna 3 -->
-        <div class="column image-logo">
-            <div>
-                <img src="../Images/social-logos/InstagramLogo.png" alt="Instagram Logo">
-                <img src="../Images/social-logos/PinterestLogo.png" alt="Pinterest Logo">
-                <img src="../Images/social-logos/LinkedInLogo.png" alt="LinkedIn Logo">
-                <img src="../Images/social-logos/TwitterLogo.png" alt="Twitter Logo">
-            </div>
-            <div class="terms">
-                <span>Terms & Conditions</span>
-                <span>Privacy Policy</span>
-            </div>
-            
-        </div>
+    <div id="footer-section">
     </div>
     
-    <script>
-        function scrollToTop() {
-          // Obtén el elemento del cuerpo y el documento
-          var body = document.body;
-          var html = document.documentElement;
-      
-          // Obtén la altura máxima de la página
-          var maxHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
-      
-          // Haz que la página se desplace suavemente hacia arriba
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-          });
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -390,5 +321,7 @@
         handleScroll();
     </script>
     <script src="../scripts/navbar-load.js"></script>
+    <script src="../scripts/footer-load.js"></script>
+    <script src="../scripts/scroll-to-top.js"></script>
 </body>
 </html>
