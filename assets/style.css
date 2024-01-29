@@ -62,31 +62,35 @@ body {
 
 .nav-item.dropdown {
     list-style-type: none;
-    width: 230px;
+    width: 400px;
 }
 
 .offcanvas-body {
     background: radial-gradient(circle , #15171f, #03071b) fixed;
     color: white;
+    display: flex;
+}
+
+.home-offcanvas {
+    background-image: linear-gradient(to right, #00ffaa , #42f2e9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar-nav {
+    margin-left: 30px;
+    margin-bottom: 80px !important;
+}
+
+.redirect {
+    font-family: Hellix,sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
 }
 
 .small-devices-language-flag {
     width: 10%;
-}
-
-.home-flex {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.home-flex > img {
-    width: 9%;
-}
-
-.home-flex > h6 {
-    text-decoration: none;
-    margin-bottom: 0;
 }
 
 .nav-link{
