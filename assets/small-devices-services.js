@@ -25,7 +25,7 @@ document.querySelector(".right-btn").addEventListener("click", function() {
 });
 
 // Cargar el JSON desde el archivo externo
-fetch('../services.json')
+fetch('assets/services.json')
     .then(response => response.json())
     .then(data => {
         serviceData = data; // Asignar los datos a serviceData
