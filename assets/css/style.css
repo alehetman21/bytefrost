@@ -125,7 +125,7 @@ body {
 
 .main-content::before {
     content: '';
-    background: url('d13cd2c583.gif') no-repeat center center;
+    background: url('../Images/home-page/home-animation.gif') no-repeat center center;
     position: absolute;
     top: 0;
     right: 0;
