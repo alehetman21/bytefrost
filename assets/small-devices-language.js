@@ -52,7 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function translateElement(element, translateKey, lang = 'en') {
         if (translations && translations[lang] && translations[lang][translateKey]) {
-            element.textContent = translations[lang][translateKey];
+            if (translations[lang][translateKey].includes('<span')) {
+                // Si es así, asignar el contenido HTML directamente
+                element.innerHTML = translations[lang][translateKey];
+            } else {
+                // Si no, asignar el contenido de texto normal
+                element.textContent = translations[lang][translateKey];
+            }
         }
     }
 
