@@ -5,20 +5,26 @@
         "benefits": "Benefits",
         "about_us": "About us",
         "contact_us": "Contact us",
+        "we": "WE<span data-translate-key='design'> DESIGN </span> WE<span data-translate-key='build'> BUILD </span>WE<span data-translate-key='deploy'> DEPLOY </span>",
         "intro_paragraph" : "For years, we have been supporting all kinds of companies in creating world-class webpages, moving them closer to their dreams.",
         "contact_us_caps": "CONTACT US",
-        "services_caps": "SERVICES"
+        "services_caps": "SERVICES",
+        "website-development": "Elevate your business with world-class web development. We create captivating pages, bringing your dreams closer. Explore more now!",
+        "corporate-website": "Project professionalism online. Our corporate websites showcase your brand's excellence. Impress clients and stakeholders with a polished digital presence."
     },
 
     "es": {
         "home": "Inicio",
         "services": "Servicios",
         "benefits": "Beneficios",
-        "about_us": "Acerca de nosotros",
+        "about_us": "¿Quiénes somos?",
         "contact_us": "Contáctenos",
+        "we": "<span data-translate-key='design'> DISEÑAMOS </span> - <span data-translate-key='build'> CREAMOS </span> - <span data-translate-key='deploy'> LANZAMOS </span>",
         "intro_paragraph": "Durante años, hemos estado apoyando a todo tipo de empresas en la creación de páginas web de clase mundial, acercándolas más a sus sueños.",
         "contact_us_caps": "CONTACTÁCTENOS",
-        "services_caps": "SERVICIOS"
+        "services_caps": "SERVICIOS",
+        "website-development": "Eleve su negocio con un desarrollo web de clase mundial. Creamos páginas cautivadoras, acercándolo sus sueños.",
+        "corporate-website": "Proyecte profesionalismo en línea. Nuestros sitios web corporativos muestran la excelencia de su marca. Impresione a clientes y partes interesadas con una presencia digital pulida."
     },
 
     "fr": {

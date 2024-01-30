@@ -6,6 +6,8 @@ function updateServiceInfo(serviceKey, serviceData) {
     document.querySelector(".service-image").src = service.imageSrc;
     document.getElementById("service-title").textContent = service.title;
     document.getElementById("service-description").textContent = service.description;
+    document.getElementById("service-description").setAttribute('data-translate-key', serviceKey)
+    
 }
 
 document.querySelector(".left-btn").addEventListener("click", function() {

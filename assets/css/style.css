@@ -814,12 +814,25 @@ span {
         margin-left: 15%;
         font-weight: 200;
         margin-bottom: 10%;
+        font-size: 1.2rem;
     }
 
     .background-paragraph {
         width: 80%;
         margin-left: 10%;
-        top: -5%;
+        top: -7%;
+        font-size: 1.3rem;
+    }
+
+    @media (min-width: 655px){
+
+        .background-paragraph {
+            width: 80%;
+            margin-left: 10%;
+            top: -9%;
+            font-size: 1.4rem;
+        }
+
     }
 }
 
@@ -1065,8 +1078,37 @@ span {
         margin-top: 50px;
     }
 
+    .about-us-section {
+        text-align: center;
+        margin-top: 35%;
+        color: white;
+    }
+
     .about-us-section > img {
-        width: 100%;
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+    .about-us-section > p {
+        width: 70%;
+        margin-left: 15%;
+        font-weight: 200;
+        margin-bottom: 10%;
+        font-size: 1.2rem;
+    }
+
+    .background-paragraph {
+        width: 90%;
+        margin-left: 5%;
+        top: -7%;
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 804px){
+        .background-paragraph {
+            top: -9%;
+            font-size: 1.6rem;
+        }
     }
 
     @media (min-width: 900px){
@@ -1078,6 +1120,13 @@ span {
         .navbar-item {
             font-size: 1.1rem;
             margin-left: 40px;
+        }
+    }
+
+    @media (min-width: 959px){
+        .background-paragraph {
+            top: -9%;
+            font-size: 1.7rem;
         }
     }
 
@@ -1333,8 +1382,42 @@ span {
         margin-top: 50px;
     }
 
+    .about-us-section {
+        text-align: center;
+        margin-top: 35%;
+        color: white;
+    }
+
     .about-us-section > img {
-        width: 100%;
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+    .about-us-section > p {
+        width: 70%;
+        margin-left: 15%;
+        font-weight: 200;
+        margin-bottom: 10%;
+        font-size: 1.2rem;
+    }
+
+    .background-paragraph {
+        width: 90%;
+        margin-left: 5%;
+        top: -10%;
+        font-size: 1.8rem;
+    }
+
+    @media (min-width: 1129px){
+        .background-paragraph {
+            font-size: 1.9rem;
+        }
+    }
+
+    @media (min-width: 1191px){
+        .background-paragraph {
+            font-size: 2rem;
+        }
     }
 
     @media (min-width: 1260px){
@@ -1604,8 +1687,41 @@ span {
         margin-top: 50px;
     }
 
+    .about-us-section {
+        text-align: center;
+        margin-top: 35%;
+        color: white;
+    }
+
     .about-us-section > img {
-        width: 100%;
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+    .about-us-section > p {
+        width: 70%;
+        margin-left: 15%;
+        font-weight: 200;
+        margin-bottom: 10%;
+        font-size: 1.3rem;
+    }
+
+    .background-paragraph {
+        width: 90%;
+        margin-left: 5%;
+        top: -10%;
+        font-size: 2.2rem;
+    }
+
+    @media (min-width: 1511px) {
+    
+        .background-paragraph {
+            width: 90%;
+            margin-left: 5%;
+            top: -10%;
+            font-size: 2.4rem;
+        }
+
     }
 }
 
@@ -1861,5 +1977,31 @@ span {
         font-weight: 600;
         border-radius: 50px;
         margin-top: 50px;
+    }
+
+    .about-us-section {
+        text-align: center;
+        margin-top: 35%;
+        color: white;
+    }
+
+    .about-us-section > img {
+        width: 30%;
+        margin-bottom: 5%;
+    }
+
+    .about-us-section > p {
+        width: 70%;
+        margin-left: 15%;
+        font-weight: 200;
+        margin-bottom: 10%;
+        font-size: 1.3rem;
+    }
+
+    .background-paragraph {
+        width: 90%;
+        margin-left: 5%;
+        top: -10%;
+        font-size: 2.6rem;
     }
 }
