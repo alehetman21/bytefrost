@@ -1,7 +1,16 @@
+const localTranslationsPath = window.location.pathname;
+const localTranslationsHtmlName = localTranslationsPath.split('/').pop().replace('.html', '');
+
 document.addEventListener('DOMContentLoaded', function () {
     let translations;
 
-    fetch('../translations.json')
+    if (localTranslationsHtmlName === 'index') {
+        translationsPath = 'assets/translations.json';
+    } else {
+        translationsPath = '../translations.json';
+    }
+
+    fetch(translationsPath)
         .then(response => response.json())
         .then(data => {
             translations = data;
@@ -18,7 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
             // Inicializar la lista de idiomas en el dropdown
             updateLanguageDropdown(region);
             const languageFlag = document.getElementById('current-language-flag');
-            languageFlag.src = `../${region}.png`;
+            if (localTranslationsHtmlName === 'index') {
+                languageFlag.src = `assets/${region}.png`;
+            } else {
+                languageFlag.src = `../${region}.png`;
+            }
         })
         .catch(error => console.error('Error loading translations', error));
 
@@ -68,7 +81,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 const languageLink = document.createElement('a');
     
                 languageChange.className = 'language-change'; // Mantener la clase existente
-                languageImage.src = `../${lang}.png`;
+                if (localTranslationsHtmlName === 'index') {
+                    languageImage.src = `assets/${lang}.png`;
+                } else {
+                    languageImage.src = `../${lang}.png`;
+                }
                 languageImage.alt = lang;
                 languageLink.href = '#';
                 languageLink.setAttribute('data-lang', lang);
@@ -91,7 +108,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     updateLanguageDropdown(selectedLang);
     
                     // Cambiar la imagen del botón según el idioma seleccionado
-                    languageFlag.src = `../${selectedLang}.png`;
+                    if (localTranslationsHtmlName === 'index') {
+                        languageFlag.src = `assets/${selectedLang}.png`;
+                    } else {
+                        languageFlag.src = `../${selectedLang}.png`;
+                    }
                 });
             }
         });

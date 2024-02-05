@@ -1,7 +1,16 @@
+const localSmallTranslationsPath = window.location.pathname;
+const localSmallTranslationsHtmlName = localSmallTranslationsPath.split('/').pop().replace('.html', '');
+
 document.addEventListener('DOMContentLoaded', function () {
     let translations;
 
-    fetch('../translations.json')
+    if (localSmallTranslationsHtmlName === 'index') {
+        smallTranslationsPath = 'assets/translations.json';
+    } else {
+        smallTranslationsPath = '../translations.json';
+    }
+
+    fetch(smallTranslationsPath)
         .then(response => response.json())
         .then(data => {
             translations = data;
@@ -19,7 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             updateLanguageDropdown(region);
             const languageFlag = document.getElementById('small-devices-current-language-flag');
-            languageFlag.src = `../small-${region}.png`;
+            if (localSmallTranslationsHtmlName === 'index') {
+                languageFlag.src = `assets/small-${region}.png`;
+            } else {
+                languageFlag.src = `../small-${region}.png`;
+            }
         })
         .catch(error => console.error('Error loading translations', error));
 
@@ -75,7 +88,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 const languageLink = document.createElement('a');
     
                 languageChange.className = 'language-change'; // Mantener la clase existente
-                languageImage.src = `../small-${lang}.png`;
+                if (localSmallTranslationsHtmlName === 'index') {
+                    languageImage.src = `assets/small-${lang}.png`;
+                } else {
+                    languageImage.src = `../small-${lang}.png`;
+                }
                 languageImage.alt = lang;
                 languageLink.href = '#';
                 languageLink.setAttribute('data-lang', lang);
@@ -98,7 +115,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     updateLanguageDropdown(selectedLang);
     
                     // Cambiar la imagen del botón según el idioma seleccionado
-                    languageFlag.src = `../small-${selectedLang}.png`;
+                    if (localSmallTranslationsHtmlName === 'index') {
+                        languageFlag.src = `assets/small-${selectedLang}.png`;
+                    } else {
+                        languageFlag.src = `../small-${selectedLang}.png`;
+                    }
                 });
             }
         });
