@@ -4,7 +4,7 @@ const localSmallTranslationsHtmlName = localSmallTranslationsPath.split('/').pop
 document.addEventListener('DOMContentLoaded', function () {
     let translations;
 
-    if (localSmallTranslationsHtmlName === 'index') {
+    if (localSmallTranslationsHtmlName === 'index' || localSmallTranslationsHtmlName === '') {
         smallTranslationsPath = 'assets/translations.json';
     } else {
         smallTranslationsPath = '../translations.json';
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             updateLanguageDropdown(region);
             const languageFlag = document.getElementById('small-devices-current-language-flag');
-            if (localSmallTranslationsHtmlName === 'index') {
+            if (localSmallTranslationsHtmlName === 'index' || localSmallTranslationsHtmlName === '') {
                 languageFlag.src = `assets/small-${region}.png`;
             } else {
                 languageFlag.src = `../small-${region}.png`;
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const languageLink = document.createElement('a');
     
                 languageChange.className = 'language-change'; // Mantener la clase existente
-                if (localSmallTranslationsHtmlName === 'index') {
+                if (localSmallTranslationsHtmlName === 'index' || localSmallTranslationsHtmlName === '') {
                     languageImage.src = `assets/small-${lang}.png`;
                 } else {
                     languageImage.src = `../small-${lang}.png`;
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     updateLanguageDropdown(selectedLang);
     
                     // Cambiar la imagen del botón según el idioma seleccionado
-                    if (localSmallTranslationsHtmlName === 'index') {
+                    if (localSmallTranslationsHtmlName === 'index' || localSmallTranslationsHtmlName === '') {
                         languageFlag.src = `assets/small-${selectedLang}.png`;
                     } else {
                         languageFlag.src = `../small-${selectedLang}.png`;

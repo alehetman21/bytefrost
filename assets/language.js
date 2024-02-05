@@ -4,7 +4,7 @@ const localTranslationsHtmlName = localTranslationsPath.split('/').pop().replace
 document.addEventListener('DOMContentLoaded', function () {
     let translations;
 
-    if (localTranslationsHtmlName === 'index') {
+    if (localTranslationsHtmlName === 'index' || localTranslationsHtmlName === '') {
         translationsPath = 'assets/translations.json';
     } else {
         translationsPath = '../translations.json';
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Inicializar la lista de idiomas en el dropdown
             updateLanguageDropdown(region);
             const languageFlag = document.getElementById('current-language-flag');
-            if (localTranslationsHtmlName === 'index') {
+            if (localTranslationsHtmlName === 'index' || localTranslationsHtmlName === '') {
                 languageFlag.src = `assets/${region}.png`;
             } else {
                 languageFlag.src = `../${region}.png`;
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 const languageLink = document.createElement('a');
     
                 languageChange.className = 'language-change'; // Mantener la clase existente
-                if (localTranslationsHtmlName === 'index') {
+                if (localTranslationsHtmlName === 'index' || localTranslationsHtmlName === '') {
                     languageImage.src = `assets/${lang}.png`;
                 } else {
                     languageImage.src = `../${lang}.png`;
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     updateLanguageDropdown(selectedLang);
     
                     // Cambiar la imagen del botón según el idioma seleccionado
-                    if (localTranslationsHtmlName === 'index') {
+                    if (localTranslationsHtmlName === 'index' || localTranslationsHtmlName === '') {
                         languageFlag.src = `assets/${selectedLang}.png`;
                     } else {
                         languageFlag.src = `../${selectedLang}.png`;

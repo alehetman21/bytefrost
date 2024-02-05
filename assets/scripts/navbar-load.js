@@ -3,7 +3,7 @@ const htmlName = path.split('/').pop().replace('.html', '');
 
 // Función para modificar los atributos src en el HTML
 function modifyData(htmlContent) {
-    if (htmlName === 'index') {
+    if (htmlName === 'index' || htmlName === '') {
         htmlContent = htmlContent.replace(/href="\.\//g, 'href="assets/webpages/');
         htmlContent = htmlContent.replace(/src="\.\.\//g, 'src="assets/');
     }
@@ -14,7 +14,7 @@ function modifyData(htmlContent) {
 function loadNavbar() {
     let navbarPath;
 
-    if (htmlName === 'index') {
+    if (htmlName === 'index' || htmlName === '') {
         navbarPath = 'assets/webpages/navbar.html';
     } else {
         navbarPath = './navbar.html';

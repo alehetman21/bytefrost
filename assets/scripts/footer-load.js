@@ -3,7 +3,7 @@ const currentHtmlName = currentPath.split('/').pop().replace('.html', '');
 
 // Función para modificar los atributos src en el HTML
 function modifyImagePaths(htmlContent) {
-    if (currentHtmlName === 'index') {
+    if (currentHtmlName === 'index' || currentHtmlName === '') {
         // Reemplaza "../" por "assets/" en los atributos src de imágenes
         htmlContent = htmlContent.replace(/src="\.\.\//g, 'src="assets/');
     }
@@ -14,7 +14,7 @@ function modifyImagePaths(htmlContent) {
 function loadFooter() {
     let footerPath;
 
-    if (currentHtmlName === 'index') {
+    if (currentHtmlName === 'index' || currentHtmlName === '') {
         footerPath = 'assets/webpages/footer.html';
     } else {
         footerPath = './footer.html';
