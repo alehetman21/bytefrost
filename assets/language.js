@@ -15,7 +15,20 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             translations = data;
             region = getLanguageFromRegion();
-            changeLanguage(region);
+            if(localStorage.getItem('selectedLanguage') == null){
+                changeLanguage(region);
+                updateLanguageDropdown(region);
+                const languageFlag = document.getElementById('current-language-flag');
+                if (localTranslationsHtmlName === 'index' || localTranslationsHtmlName === '') {
+                    languageFlag.src = `assets/${region}.png`;
+                } else {
+                    languageFlag.src = `../${region}.png`;
+                }
+            }
+            else{
+                changeLanguage(localStorage.getItem('selectedLanguage'));
+                updateLanguageDropdown(localStorage.getItem('selectedLanguage'));
+            }
 
             // Obtener todos los elementos que necesitan ser traducidos
             const translatableElements = document.querySelectorAll('[data-translate-key]');
@@ -25,13 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const languageMenu = document.getElementById('language-dropdown-menu');
 
             // Inicializar la lista de idiomas en el dropdown
-            updateLanguageDropdown(region);
-            const languageFlag = document.getElementById('current-language-flag');
-            if (localTranslationsHtmlName === 'index' || localTranslationsHtmlName === '') {
-                languageFlag.src = `assets/${region}.png`;
-            } else {
-                languageFlag.src = `../${region}.png`;
-            }
         })
         .catch(error => console.error('Error loading translations', error));
 
@@ -50,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function changeLanguage(lang) {
+        localStorage.setItem('selectedLanguage', lang);
         if (translations && translations[lang]) {
             // Obtener todos los elementos que necesitan ser traducidos
             const translatableElements = document.querySelectorAll('[data-translate-key]');
@@ -72,6 +79,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const languageMenu = document.getElementById('language-dropdown-menu');
         const languageFlag = document.getElementById('current-language-flag');
         languageMenu.innerHTML = '';
+        if (localTranslationsHtmlName === 'index' || localTranslationsHtmlName === '') {
+            languageFlag.src = `assets/${currentLang}.png`;
+        } else {
+            languageFlag.src = `../${currentLang}.png`;
+        }
     
         Object.keys(translations).forEach(lang => {
             if (lang !== currentLang) {
@@ -117,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-    
 
     function getLanguageFullName(lang) {
         switch (lang) {
