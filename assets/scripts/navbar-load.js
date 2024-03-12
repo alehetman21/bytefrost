@@ -20,8 +20,7 @@ function loadNavbar() {
         navbarPath = './navbar.html';
     }
 
-    // Realiza la solicitud fetch con la ruta correspondiente
-    fetch(navbarPath)
+    return fetch(navbarPath)
         .then(response => response.text())
         .then(data => {
             // Modifica los atributos src antes de insertar el contenido
@@ -30,5 +29,17 @@ function loadNavbar() {
         });
 }
 
-// Llama a la función para cargar el navbar
-loadNavbar();
+loadNavbar().then(() => {
+    var currentPage = window.location.pathname.split("/").pop();
+
+    var navbarItems = document.querySelectorAll(".navbar-items-container a");
+
+    navbarItems.forEach(function(item) {
+        var href = item.getAttribute("href");
+        var filename = href.split("/").pop();
+
+        if (filename === currentPage) {
+            item.style.fontWeight = "bolder";
+        }
+    });
+});
